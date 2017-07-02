@@ -1,0 +1,9 @@
+$column-width: 8.33333%;
+
+$breakpoints: (xs, 0px) (s, 576px) (m, 768px) (lg, 992px);
+$container-max-width: 2000px !default;
+$list-column:    (2, "two") (3, "three", "one-fourth") (4, "four", "one-third") (5, "five") (6, "six", "one-half") (7, "seven") (8, "eight", "two-thirds") (9, "nine", "three-fourths") (10, "ten") (11, "eleven") (12, "twelve", "full") !default;
+
+$list-offset:    (1, "one") (2, "two") (3, "three") (4, "four") (5, "five") (6, "six") (7, "seven") (8, "eight") (9, "nine") (10, "ten") (11, "eleven") !default;
+
+$gutter: percentage(20px / $container-max-width);

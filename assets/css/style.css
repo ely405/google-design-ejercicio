@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container,
+.row {
+  max-width: 2000px;
+  padding: 0 0.5%;
+  margin: 10px auto;
+  zoom: 1; }
+  .container:before, .container:after,
+  .row:before,
+  .row:after {
+    content: "";
+    display: table; }
+  .container:after,
+  .row:after {
+    clear: both; }
+
+@media (min-width: 0px) {
+  .col {
+    float: left;
+    margin: 0 0 0 1%;
+    width: 8.33333%; }
+    .col:first-child {
+      margin-left: 0; }
+    .col.two {
+      width: 15.66666%; }
+    .col.three, .col.one-fourth {
+      width: 23.99999%; }
+    .col.four, .col.one-third {
+      width: 32.33332%; }
+    .col.five {
+      width: 40.66665%; }
+    .col.six, .col.one-half {
+      width: 48.99998%; }
+    .col.seven {
+      width: 57.33331%; }
+    .col.eight, .col.two-thirds {
+      width: 65.66664%; }
+    .col.nine, .col.three-fourths {
+      width: 73.99997%; }
+    .col.ten {
+      width: 82.3333%; }
+    .col.eleven {
+      width: 90.66663%; }
+    .col.twelve, .col.full {
+      width: 98.99996%; }
+    .col.offset-one {
+      margin-left: 10.33333%; }
+      .col.offset-one:first-child {
+        margin-left: 9.33333%; }
+    .col.offset-two {
+      margin-left: 19.66666%; }
+      .col.offset-two:first-child {
+        margin-left: 18.66666%; }
+    .col.offset-three {
+      margin-left: 28.99999%; }
+      .col.offset-three:first-child {
+        margin-left: 27.99999%; }
+    .col.offset-four {
+      margin-left: 38.33332%; }
+      .col.offset-four:first-child {
+        margin-left: 37.33332%; }
+    .col.offset-five {
+      margin-left: 47.66665%; }
+      .col.offset-five:first-child {
+        margin-left: 46.66665%; }
+    .col.offset-six {
+      margin-left: 56.99998%; }
+      .col.offset-six:first-child {
+        margin-left: 55.99998%; }
+    .col.offset-seven {
+      margin-left: 66.33331%; }
+      .col.offset-seven:first-child {
+        margin-left: 65.33331%; }
+    .col.offset-eight {
+      margin-left: 75.66664%; }
+      .col.offset-eight:first-child {
+        margin-left: 74.66664%; }
+    .col.offset-nine {
+      margin-left: 84.99997%; }
+      .col.offset-nine:first-child {
+        margin-left: 83.99997%; }
+    .col.offset-ten {
+      margin-left: 94.3333%; }
+      .col.offset-ten:first-child {
+        margin-left: 93.3333%; }
+    .col.offset-eleven {
+      margin-left: 103.66663%; }
+      .col.offset-eleven:first-child {
+        margin-left: 102.66663%; } }
+@media (min-width: 576px) {
+  .col {
+    float: left;
+    margin: 0 0 0 1%;
+    width: 8.33333%; }
+    .col:first-child {
+      margin-left: 0; }
+    .col.two {
+      width: 15.66666%; }
+    .col.three, .col.one-fourth {
+      width: 23.99999%; }
+    .col.four, .col.one-third {
+      width: 32.33332%; }
+    .col.five {
+      width: 40.66665%; }
+    .col.six, .col.one-half {
+      width: 48.99998%; }
+    .col.seven {
+      width: 57.33331%; }
+    .col.eight, .col.two-thirds {
+      width: 65.66664%; }
+    .col.nine, .col.three-fourths {
+      width: 73.99997%; }
+    .col.ten {
+      width: 82.3333%; }
+    .col.eleven {
+      width: 90.66663%; }
+    .col.twelve, .col.full {
+      width: 98.99996%; }
+    .col.offset-one {
+      margin-left: 10.33333%; }
+      .col.offset-one:first-child {
+        margin-left: 9.33333%; }
+    .col.offset-two {
+      margin-left: 19.66666%; }
+      .col.offset-two:first-child {
+        margin-left: 18.66666%; }
+    .col.offset-three {
+      margin-left: 28.99999%; }
+      .col.offset-three:first-child {
+        margin-left: 27.99999%; }
+    .col.offset-four {
+      margin-left: 38.33332%; }
+      .col.offset-four:first-child {
+        margin-left: 37.33332%; }
+    .col.offset-five {
+      margin-left: 47.66665%; }
+      .col.offset-five:first-child {
+        margin-left: 46.66665%; }
+    .col.offset-six {
+      margin-left: 56.99998%; }
+      .col.offset-six:first-child {
+        margin-left: 55.99998%; }
+    .col.offset-seven {
+      margin-left: 66.33331%; }
+      .col.offset-seven:first-child {
+        margin-left: 65.33331%; }
+    .col.offset-eight {
+      margin-left: 75.66664%; }
+      .col.offset-eight:first-child {
+        margin-left: 74.66664%; }
+    .col.offset-nine {
+      margin-left: 84.99997%; }
+      .col.offset-nine:first-child {
+        margin-left: 83.99997%; }
+    .col.offset-ten {
+      margin-left: 94.3333%; }
+      .col.offset-ten:first-child {
+        margin-left: 93.3333%; }
+    .col.offset-eleven {
+      margin-left: 103.66663%; }
+      .col.offset-eleven:first-child {
+        margin-left: 102.66663%; } }
+@media (min-width: 768px) {
+  .col {
+    float: left;
+    margin: 0 0 0 1%;
+    width: 8.33333%; }
+    .col:first-child {
+      margin-left: 0; }
+    .col.two {
+      width: 15.66666%; }
+    .col.three, .col.one-fourth {
+      width: 23.99999%; }
+    .col.four, .col.one-third {
+      width: 32.33332%; }
+    .col.five {
+      width: 40.66665%; }
+    .col.six, .col.one-half {
+      width: 48.99998%; }
+    .col.seven {
+      width: 57.33331%; }
+    .col.eight, .col.two-thirds {
+      width: 65.66664%; }
+    .col.nine, .col.three-fourths {
+      width: 73.99997%; }
+    .col.ten {
+      width: 82.3333%; }
+    .col.eleven {
+      width: 90.66663%; }
+    .col.twelve, .col.full {
+      width: 98.99996%; }
+    .col.offset-one {
+      margin-left: 10.33333%; }
+      .col.offset-one:first-child {
+        margin-left: 9.33333%; }
+    .col.offset-two {
+      margin-left: 19.66666%; }
+      .col.offset-two:first-child {
+        margin-left: 18.66666%; }
+    .col.offset-three {
+      margin-left: 28.99999%; }
+      .col.offset-three:first-child {
+        margin-left: 27.99999%; }
+    .col.offset-four {
+      margin-left: 38.33332%; }
+      .col.offset-four:first-child {
+        margin-left: 37.33332%; }
+    .col.offset-five {
+      margin-left: 47.66665%; }
+      .col.offset-five:first-child {
+        margin-left: 46.66665%; }
+    .col.offset-six {
+      margin-left: 56.99998%; }
+      .col.offset-six:first-child {
+        margin-left: 55.99998%; }
+    .col.offset-seven {
+      margin-left: 66.33331%; }
+      .col.offset-seven:first-child {
+        margin-left: 65.33331%; }
+    .col.offset-eight {
+      margin-left: 75.66664%; }
+      .col.offset-eight:first-child {
+        margin-left: 74.66664%; }
+    .col.offset-nine {
+      margin-left: 84.99997%; }
+      .col.offset-nine:first-child {
+        margin-left: 83.99997%; }
+    .col.offset-ten {
+      margin-left: 94.3333%; }
+      .col.offset-ten:first-child {
+        margin-left: 93.3333%; }
+    .col.offset-eleven {
+      margin-left: 103.66663%; }
+      .col.offset-eleven:first-child {
+        margin-left: 102.66663%; } }
+@media (min-width: 992px) {
+  .col {
+    float: left;
+    margin: 0 0 0 1%;
+    width: 8.33333%; }
+    .col:first-child {
+      margin-left: 0; }
+    .col.two {
+      width: 15.66666%; }
+    .col.three, .col.one-fourth {
+      width: 23.99999%; }
+    .col.four, .col.one-third {
+      width: 32.33332%; }
+    .col.five {
+      width: 40.66665%; }
+    .col.six, .col.one-half {
+      width: 48.99998%; }
+    .col.seven {
+      width: 57.33331%; }
+    .col.eight, .col.two-thirds {
+      width: 65.66664%; }
+    .col.nine, .col.three-fourths {
+      width: 73.99997%; }
+    .col.ten {
+      width: 82.3333%; }
+    .col.eleven {
+      width: 90.66663%; }
+    .col.twelve, .col.full {
+      width: 98.99996%; }
+    .col.offset-one {
+      margin-left: 10.33333%; }
+      .col.offset-one:first-child {
+        margin-left: 9.33333%; }
+    .col.offset-two {
+      margin-left: 19.66666%; }
+      .col.offset-two:first-child {
+        margin-left: 18.66666%; }
+    .col.offset-three {
+      margin-left: 28.99999%; }
+      .col.offset-three:first-child {
+        margin-left: 27.99999%; }
+    .col.offset-four {
+      margin-left: 38.33332%; }
+      .col.offset-four:first-child {
+        margin-left: 37.33332%; }
+    .col.offset-five {
+      margin-left: 47.66665%; }
+      .col.offset-five:first-child {
+        margin-left: 46.66665%; }
+    .col.offset-six {
+      margin-left: 56.99998%; }
+      .col.offset-six:first-child {
+        margin-left: 55.99998%; }
+    .col.offset-seven {
+      margin-left: 66.33331%; }
+      .col.offset-seven:first-child {
+        margin-left: 65.33331%; }
+    .col.offset-eight {
+      margin-left: 75.66664%; }
+      .col.offset-eight:first-child {
+        margin-left: 74.66664%; }
+    .col.offset-nine {
+      margin-left: 84.99997%; }
+      .col.offset-nine:first-child {
+        margin-left: 83.99997%; }
+    .col.offset-ten {
+      margin-left: 94.3333%; }
+      .col.offset-ten:first-child {
+        margin-left: 93.3333%; }
+    .col.offset-eleven {
+      margin-left: 103.66663%; }
+      .col.offset-eleven:first-child {
+        margin-left: 102.66663%; } }
+.flex-box, .header .header__nav ul {
+  display: flex; }
+
+.space-btween, .header .header__nav ul {
+  justify-content: space-between; }
+
+.f-rob, .header, .podcast, .newsfeed {
+  font-family: "Roboto", sans-serif; }
+
+.f-rob-mono {
+  font-family: "Roboto Mono", monospace; }
+
+.header {
+  height: 3.5rem; }
+  .header .header__logo {
+    height: 100%; }
+  .header .header__logo--google {
+    background: url("../img/logo-short.svg") no-repeat;
+    background-size: contain;
+    height: 100%;
+    background-position: center top;
+    display: inline-block; }
+  .header .header__nav .header__nav--item {
+    list-style: none; }
+  .header .header__nav a {
+    text-decoration: none;
+    color: gray; }
+
+.podcast .podcast__img {
+  height: 23rem; }
+  .podcast .podcast__img .podcast__img--green {
+    background: url("../img/Method_Podcast.png") no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    display: inline-block; }
+
+.newsfeed .newsfeed__featured-img {
+  height: 300px; }
+  .newsfeed .newsfeed__featured-img .newsfeed__featured-img--newgoogle {
+    background: url("../img/GoogleDesign-new.jpg") no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center top;
+    display: inline-block; }
+
+.news-right__newletter {
+  background-color: #b3b3b3; }
+  .news-right__newletter .news-right__newsletter--img {
+    height: 3rem; }
+    .news-right__newletter .news-right__newsletter--img .newsletter__mail {
+      background: url("../img/gdlogo.png") no-repeat;
+      background-size: contain;
+      height: 100%;
+      background-position: center top;
+      display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */

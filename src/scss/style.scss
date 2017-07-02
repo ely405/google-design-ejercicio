@@ -1,0 +1,70 @@
+@import "components/grid";
+@import "components/flex";
+@import "components/color";
+@import "components/fonts";
+
+@mixin bg-img ($url, $repeat, $size, $position, $height, $display) {
+  background: url($url) $repeat;
+  background-size: $size;
+  height: $height;
+  background-position: $position;
+  display: $display;
+}
+//header
+.header{
+  height: 3.5rem;
+  @extend .f-rob;
+  & .header__logo{
+    height: 100%
+  }
+  & .header__logo--google{
+    @include bg-img('../img/logo-short.svg', no-repeat, contain, center top, 100%, inline-block);
+  }
+  & .header__nav{
+    ul{
+      @extend .flex-box;
+      @extend .space-btween;
+    }
+    & .header__nav--item{
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+      color: $gray;
+    }
+  }
+}
+
+//podcast
+
+.podcast{
+  @extend .f-rob;
+  & .podcast__img{
+    height: 23rem;
+    & .podcast__img--green{
+      @include bg-img('../img/Method_Podcast.png', no-repeat, cover, center, 100%, inline-block);
+    }
+  }
+}
+
+//newsfeed
+
+.newsfeed{
+  @extend .f-rob;
+  & .newsfeed__featured-img{
+    height: 300px;
+    & .newsfeed__featured-img--newgoogle{
+      @include bg-img('../img/GoogleDesign-new.jpg', no-repeat, cover, center top, 100%, inline-block);
+    }
+  }
+}
+
+.news-right__newletter{
+  background-color: $gray-light;
+  & .news-right__newsletter--img{
+    height: 3rem;
+    & .newsletter__mail{
+      @include bg-img('../img/gdlogo.png', no-repeat, contain, center top, 100%, inline-block);
+    }
+  }
+}

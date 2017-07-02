@@ -1,0 +1,45 @@
+@import "grid-var";
+
+@mixin column() {
+  float: left;
+  margin: 0 0 0 $gutter;
+  width: $column-width;
+  &:first-child {
+      margin-left: 0;
+  }
+}
+
+@mixin columns($count:1) {
+    width: ($column-width * $count) - ($gutter);
+}
+
+@mixin offset($columns:1) {
+    margin-left: ($column-width * $columns) + ($gutter * ($columns + 1));
+    &:first-child {
+        margin-left: ($column-width * $columns) + ($gutter * $columns);
+    }
+}
+
+@mixin column-set() {
+    .col {
+        @include column;
+        @each $i in $list-column {
+            $selectors: ();
+            @for $j from 2 through length($i) {
+                $selectors: append($selectors, unquote("&.#{nth($i, $j)}"), comma);
+            }
+            #{$selectors} {
+                @include columns(nth($i, 1));
+            }
+        }
+        @each $i in $list-offset {
+            $selectors: ();
+            @for $j from 2 to length($i) + 1 {
+                $selectors: append($selectors, unquote("&.offset-#{nth($i, $j)}"), comma);
+            }
+            #{$selectors} {
+                @include offset(nth($i, 1));
+            }
+        }
+    }
+}

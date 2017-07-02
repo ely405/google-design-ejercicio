@@ -1,0 +1,21 @@
+@import "grid-components/grid-var";
+@import "grid-components/grid-container";
+@import "grid-components/grid-column";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container,
+.row {
+  @include container ;
+  @include clearfix;
+}
+
+@each $i, $screen in $breakpoints {
+  @media (min-width: $screen){
+    @include column-set;
+  }
+}
